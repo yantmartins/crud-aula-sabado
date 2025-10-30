@@ -108,19 +108,19 @@ db = Database()
 # for cli in clientes:
 #     print(f'ID: {cli[0]} | Nome: {cli[1]} | CPF: {cli[2]} | Fone: {cli[3]} | Cidade: {cli[4]}')
 
-# cliente = db.select_by_id(1)
-# if cliente:
-#     print("Cliente encontrado:")
-#     print(f"ID: {cliente[0]}")
-#     print(f"Nome: {cliente[1]}")
-#     print(f"CPF: {cliente[2]}")
-#     print(f"Fone: {cliente[3]}")
-#     print(f"Cidade: {cliente[4]}")
-# else:
-#     print("Cliente não encontrado.")    
+cliente = db.select_by_id(1)
+if cliente:
+    print("Cliente encontrado:")
+    print(f"ID: {cliente[0]}")
+    print(f"Nome: {cliente[1]}")
+    print(f"CPF: {cliente[2]}")
+    print(f"Fone: {cliente[3]}")
+    print(f"Cidade: {cliente[4]}")
+else:
+    print("Cliente não encontrado.")    
 
 #     id_select = int(input("Qual cliente deseja selecionar? "))
 #     clie = db.select_by_id(id_select)
 #     print(clie)
 
-teste = db.update()
+# teste = db.update()
